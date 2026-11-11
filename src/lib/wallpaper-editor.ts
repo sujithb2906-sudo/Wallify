@@ -15,6 +15,7 @@ export type WallpaperLayer = {
   text?: string;
   font?: string;
   fontSize?: number;
+  align?: "left" | "center" | "right";
   source?: string;
   shape?: "circle" | "star";
 };
