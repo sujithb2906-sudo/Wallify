@@ -11,7 +11,7 @@ export const imageSettings: Omit<ImageConfig, "apiKey"> = {
   format: "openai",
 };
 
-export function generateWallpaper(config: ImageConfig, prompt: string) {
+export function generateWallpaper(config: ImageConfig, prompt: string, stream = true) {
   return fetch(`${config.baseURL}/v1/images/generations`, {
     method: "POST",
     headers: {
@@ -22,10 +22,9 @@ export function generateWallpaper(config: ImageConfig, prompt: string) {
     body: JSON.stringify({
       model: config.model,
       prompt,
-      stream: true,
-      partial_images: 1,
       size: "1024x1536",
       quality: "high",
+      ...(stream ? { stream: true, partial_images: 1 } : {}),
     }),
   });
 }
