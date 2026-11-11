@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+- Keep the WALLIFY creation experience as the home route; compose designs and export PNGs in browser canvas so visitors can create without accounts or stored designs.
+- Route image-generation requests through a TanStack server route and keep the Lovable image-service credential exclusively in server request handlers.

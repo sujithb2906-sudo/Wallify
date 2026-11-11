@@ -71,3 +71,13 @@ export function imageElementBounds(layer: WallpaperLayer) {
   const side = (layer.kind === "image" ? 188 : layer.kind === "sticker" ? 62 : 84) * layer.scale;
   return { width: side, height: side };
 }
+
+export function wallpaperHitTest(
+  layers: WallpaperLayer[],
+  point: { x: number; y: number },
+) {
+  return [...layers].reverse().find((layer) => {
+    const bounds = imageElementBounds(layer);
+    return Math.abs(layer.x - point.x) <= bounds.width / 2 && Math.abs(layer.y - point.y) <= bounds.height / 2;
+  }) ?? null;
+}
