@@ -1,24 +1,29 @@
-# Screenshot to Pixel
+# WALLIFY 🎨
+### Your Screen. Your Style.
 
-Implement exactly the screenshot and nothing else
+WALLIFY is a custom phone wallpaper generator that allows users to create, personalize, and download unique wallpapers according to their creativity and preferences.
 
-This project was built with [Lovable](https://lovable.dev).
+## ✨ Features
+- 🎨 Custom wallpaper editor
+- 🤖 AI-powered wallpaper generation
+- 🌈 Custom colours and gradients
+- ✍️ Text, fonts, and stickers
+- 📱 Live smartphone preview
+- 🖼️ Multiple wallpaper categories
+- 📥 HD wallpaper downloads
+- 💻 Responsive and user-friendly interface
 
-## Build with Lovable
+## 🎯 Purpose
+To make wallpaper creation simple, creative, and accessible to everyone.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/92a253c8-8904-49f7-ac8b-771dbe3cea0a).
+## 🛠️ Built With
+- HTML
+- CSS
+- JavaScript
+- React (if used)
+- AI image generation (if integrated)
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## 🚀 Vision
+Give everyone the freedom to create wallpapers that reflect their personality and imagination.
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+**WALLIFY – Create it. Customize it. Make it yours!**
